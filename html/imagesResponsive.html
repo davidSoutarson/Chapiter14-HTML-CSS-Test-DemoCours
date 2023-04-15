@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Image responsives</title>
+</head>
+<body>
+  <header>
+    <h1>html css expert Cours & Demo</h1>
+      <!--racourcie nav>(ul>li*8>a) -->
+      <nav>
+        <h2>menu prinsipale</h2>
+        <ul>
+          <li><a href="../index.html">Accueille</a></li>
+          <li><a href="imagesResponsive.html">Images responsive</a></li>
+          <li><a href="cssGridLayout.html">CSS Grid Layout</a></li>
+          <li><a href="metadonnees.html">Métadonnées</a></li>
+          <li><a href="combinerFlexboxEtGrid.html">Combiner flexbox et grid layout</a></li>
+          <li><a href="NomageCSS.html">Nomage CSS: SMACSS,BEM,Atomic CSS</a></li>
+          <li><a href="LesFrameworks.html">Frameworks: Bootstrap,Foundation</a></li>
+          <li><a href="Préporcesseur.html">Préporcesseur: less Et SASS(Compass)</a></li>
+        </ul>
+      </nav>
+  </header>
+  <main>
+    <h1>Image responsives</h1>
+
+    <article class="sommaire">
+      <h2 class="titre-sommaire">Sommaire</h2>
+
+      <nav>
+        <ul>
+          <li><a href="#Grand-I">I. L'image responsive</a>
+            <ul>
+              <li><a href="#">A. Choix par la resolution </a></li>
+              <li><a href="#">B. Choix par la lisibilité de l'image(ou considerations esthétiques)</a></li>
+            </ul>
+          </li>
+          <li><a href="#"> II L'attribut srset </a>
+            <ul>
+              <li><a href="#">A. La largeur des images</a></li>
+              <li><a href="#">B. La denciter des images</a></li>
+              <li><a href="#">C. L’attribut sizes</a></li>
+            </ul>
+          </li>
+          <li><a href="#">III La balise  &ltpicture&gt </a>
+            <ul>
+              <li><a href="#">A. Fonctionnement</a></li>
+              <li><a href="#">B. Choix des types (ou formats) d’images</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Conclusion</a></li>
+        </ul>
+      </nav>
+
+      <p>
+        si l'on en croit la définition de <strong class="nom-propre">Jason Grigsby</strong>,
+        une image responsive se réfère à :« Une méthode pour fournir aux
+        navigateurs des sources d’images qui diffèrent selon la résolution de l’appareil, la taille
+        de l’élément image sur la page, ou tout autre facteur. »
+      </p>
+    </article>
+    <article class="">
+      <h2 id="Grand-I">I. L'images responsive</h2>
+
+    <p>
+      Une image responsive (ou adaptative) répond au besoin des différents
+      appareils "ecrant" capables de consulter une page web. Il paraît peu adéquat
+      qu’un téléphone consulte une image de 3200 px sur 4200 px.
+      L’idée serait donc, de donner le choix entre différentes sources images,
+      suivant le profil des appareils servant à les afficher
+    </p>
+
+    <p>
+      Le problème est que si on n’utilise que la balise &ltimg&gt, il n’y a qu’un
+      choix de source pour l’image. Pour rappel, la balise &ltimg&gt se présente
+      sous sa plus simple expression, comme ceci :
+    </p>
+
+    <p>EX 1 balise Image: &lt img src= "image.jpg" alt= "image" &gt</p>
+
+    <p>
+      Cependant, même si on arrive à avoir plusieurs sources disponibles pour
+      l’image, il faut également définir des critères pour opérer un choix entre
+      celles-ci.
+    </p>
+
+    <h3>Choix par resolution</h3>
+
+    <p>
+      Comme pour la conception d’un site responsive, on a défini des
+      points de rupture pour nos pages, on définit des tailles d’images
+      différentes suivant la résolution cible :
+    </p>
+    <ul>
+      <li>téléphone : petite taille ;</li>
+      <li>tablette : taille moyenne ;</li>
+      <li>écran : grande taille.</li>
+    </ul>
+
+  <p>
+    Dans le même ordre d’idées, mais on y reviendra plus tard en détail, <strong> on
+    peut modifier la résolution non plus cible, mais de l’image elle-même.
+    Dans les deux cas pourtant,  on peut dire que l’on est dans le cas général,
+    voulant que l’image la plus légère aille vers l’écran le plus petit
+    (en présumant que la qualité de connexion est moindre pour le téléphone)</strong>.
+  </p>
+
+    <h3>Choix par la lisibilité de limage (consideration esthetiques)</h3>
+
+    <p>
+      -Une grand images sur un grand ecrant ces Bien! <br>
+      -Une grand images sur un petit ecrant ces Pas bien! <br>
+      Dans le passage d’un grand écran à un petit, si on a au départ une grande
+      image, celle-ci peut se retrouver à ne plus avoir grand intérêt, une fois
+      consultée sur un petit écran.
+    </p>
+
+      <p>Ici, une image sur un écran :</p>
+
+      <p>La même image sur un petit écran :</p>
+      <p>
+        Le personnage qui constitue, avec le paysage, le principal intérêt de
+        l’image est ridiculement petit. Comment faire ?
+      </p>
+
+      <p>1. Recadrer</p>
+
+      <p>2. Changer de ratio</p>
+      <p>On peut passer de paysage à portrait et inversement :</p>
+      <p>
+        On voit que l’image a également été recadrée ; ce n’est donc pas très
+        différent de ce que l’on avait précédemment.
+      </p>
+      <p>
+        Ces remarques préliminaires sont importantes, mais ne sont rien s’il n’est
+        pas possible d’affecter à différentes tailles d’écran, un choix d’images
+        différent.
+      </p>
+
+
+
+    </article>
+
+  </main>
+  <footer>
+    <p>
+      Pages réalisés par David Soutarson dans le cadre de son apprentissage des
+      langages du Web.
+    </p>
+  </footer>
+
+</body>
+</html>
