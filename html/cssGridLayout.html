@@ -9,78 +9,308 @@
 <body>
   <header>
     <h1>html css expert Cours & Demo</h1>
-      <!--racourcie nav>(ul>li*8>a) -->
-      <nav>
-        <h2>menu prinsipale</h2>
-        <ul>
-          <li><a href="../index.html">Accueille</a></li>
-          <li><a href="imagesResponsive.html">Images responsive</a></li>
-          <li><a href="cssGridLayout.html">CSS Grid Layout</a></li>
-          <li><a href="metadonnees.html">Métadonnées</a></li>
-          <li><a href="combinerFlexboxEtGrid.html">Combiner flexbox et grid layout</a></li>
-          <li><a href="NomageCSS.html">Nomage CSS: SMACSS,BEM,Atomic CSS</a></li>
-          <li><a href="LesFrameworks.html">Frameworks: Bootstrap,Foundation</a></li>
-          <li><a href="Préporcesseur.html">Préporcesseur: less Et SASS(Compass)</a></li>
-        </ul>
-      </nav>
+    <!--racourcie nav>(ul>li*8>a) -->
+    <nav>
+      <h2>menu prinsipale</h2>
+      <ul>
+        <li><a href="../index.html">Accueille</a></li>
+        <li><a href="imagesResponsive.html">Images responsive</a></li>
+        <li><a href="cssGridLayout.html">CSS Grid Layout</a></li>
+        <li><a href="metadonnees.html">Métadonnées</a></li>
+        <li><a href="combinerFlexboxEtGrid.html">Combiner flexbox et grid layout</a></li>
+        <li><a href="NomageCSS.html">Nomage CSS: SMACSS,BEM,Atomic CSS</a></li>
+        <li><a href="LesFrameworks.html">Frameworks: Bootstrap,Foundation</a></li>
+        <li><a href="Préporcesseur.html">Préporcesseur: less Et SASS(Compass)</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <h1>CSS Grid Layout</h1>
 
     <article class="sommaire">
       <h1 class="titre-sommaire">Sommaire</h1>
-        <nav>
-          <ul>
-            <li><a href="">I. Les notion fondamentales</a>
-              <ul>
-                <li><a href="">A. Grid-contaire et grid-items</a></li>
-                <li><a href="">B. Les élements Constitutifs de la grille</a></li>
-              </ul>
-            </li>
-            <li><a href="">II. Grilles sommaires</a>
-              <ul>
-                <li><a href="">A. Grille sommaire: 3 colonnes et 1 rangée</a></li>
-                <li><a href="">B. Grille somaire: 3 colonnes et 2 rangées</a></li>
-                <li><a href="">C. Un problème de taille</a></li>
-              </ul>
-            </li>
-            <li><a href="">III. Grilles avec zones</a>
-              <ul>
-                <li><a href="">A. Organiser des grid-items</a></li>
-                <li><a href="">B. Fonction des zones par nom</a></li>
-              </ul
-            </li>
-            <li><a href="">IV. Grilles inplicite et explisites</a>
-              <ul>
-                <li><a href="">A. Qu'est-ce qu'une grid implicite?</a></li>
-                <li><a href="">B. Agencement de la grille implicicite</a></li>
-              </ul
-            </li>
-            <li><a href="">V. Grilles responsive </a>
-              <ul>
-                <li><a href="">A. Création</a></li>
-                <li><a href="">B. Media query</a></li>
-              </ul
-            </li>
-            <li><a href="">VI. Alignement et unités</a>
-              <ul>
-                <li><a href="">A. Alignement depuis la gris des comentaire</a></li>
-                <li><a href="">B. alignement depuis les grid-items</a></li>
-              </ul
-            </li>
-            <li><a href="">VII. Conclusion</a></li>
-          </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="">I. Les notion fondamentales</a>
+            <ul>
+              <li><a href="">A. Grid-contaire et grid-items</a></li>
+              <li><a href="">B. Les élements Constitutifs de la grille</a></li>
+            </ul>
+          </li>
+          <li><a href="">II. Grilles sommaires</a>
+            <ul>
+              <li><a href="">A. Grille sommaire: 3 colonnes et 1 rangée</a></li>
+              <li><a href="">B. Grille somaire: 3 colonnes et 2 rangées</a></li>
+              <li><a href="">C. Un problème de taille</a></li>
+            </ul>
+          </li>
+          <li><a href="">III. Grilles avec zones</a>
+            <ul>
+              <li><a href="">A. Organiser des grid-items</a></li>
+              <li><a href="">B. Fonction des zones par nom</a></li>
+            </ul>
+          </li>
+          <li><a href="">IV. Grilles inplicite et explisites</a>
+            <ul>
+              <li><a href="">A. Qu'est-ce qu'une grid implicite?</a></li>
+              <li><a href="">B. Agencement de la grille implicicite</a></li>
+            </ul>
+          </li>
+          <li><a href="">V. Grilles responsive </a>
+            <ul>
+              <li><a href="">A. Création</a></li>
+              <li><a href="">B. Media query</a></li>
+            </ul>
+          </li>
+          <li><a href="">VI. Alignement et unités</a>
+            <ul>
+              <li><a href="">A. Alignement depuis la gris des comentaire</a></li>
+              <li><a href="">B. alignement depuis les grid-items</a></li>
+            </ul>
+          </li>
+          <li><a href="">VII. Conclusion</a></li>
+        </ul>
+      </nav>
 
     </article>
+    <article class="cours-definition">
+      <h1>Definition</h1>
+      <p>
+        CSS Grid Layout est à ce jour la méthode de mise en page
+        la plus avancée qui peut fournir le CSS.
+        La plupart des navigateurs supportent CSS Grid Layout depuis mars 2017 et
+        octobre 2017 pour Edge. Les versions smartphones ont suivi
+        ou suivent peu à peu. On peut donc théoriquement l’utiliser
+        en production.
+      </p>
+      <p>
+        Avec Grid Layout on va pouvoir définir très précisément
+        la place des éléments sur une grille virtuelle (rangées et
+        colonnes) de manière beaucoup plus simple qu’avec un système de grille
+        tel que nous avons étudié plus tôt. En effet, on
+        peut demander à un élément d’être à cheval sur plusieurs
+        rangées et/ou plusieurs colonnes et celles-ci vont s’adapter
+        les unes aux autres de manière harmonieuse.
+      </p>
+      <p>
+        Dans le même ordre d’idées, on va pouvoir modifier la
+        place et la position d’un élément, chose très appréciable
+        pour modifier la configuration de page dans le cadre du web
+        responsive.
+      </p>
+    </article>
 
-  </main>
-  <footer>
-    <p>
-      Pages réalisés par David Soutarson dans le cadre de son apprentissage des
-      langages du Web.
-    </p>
-  </footer>
+    <article>
+      <h1>I les notions fondamentatles</h1>
+      <h2>A. Grid-containers et grid-items</h2>
+      <p>
+        Tout comme on a distingué dans le modèle flexbox, le flex-container
+        des flex-items, on va ici différencier un grid-container (le parent) des
+        grid-items (les enfants).
+      </p>
+      <p>
+        On retrouve ici le fonctionnement du modèle flexbox: des règles sont
+        appliquées sur le grid-container quand d’autres le sont pour les grid-items.
+        De plus, un grid-item peut à son tour être transformé en grid-container.
+      </p>
+      <p>
+        Dans le chapitre sur les grilles de mise en page, on a vu que cette opération
+        pouvait se montrer délicate, en particulier lorsque la grille possède une
+        gouttière. Le modèle de grille CSS facilite grandement cette opération.
+      </p>
+      <p>
+        Il faut tout d’abord éclaircir certaines notions de base en représentant une
+        grille sommaire comme suit:
+      </p>
+      <img src="../image/cour-css-grid/GrilleFigure1.jpg" alt="Image grille 3x3 bleu, provenent du cour:CSS Grid Layout">
+      <p>
+        Chaque trait bleu et carré ainsi dessinés ont leur importance: ce sont les
+        éléments fondamentaux de la grille.
+      </p>
+      <h2>B. Les éléments constitutifs de la grille</h2>
+      <p>
+        Suivant l’article fondateur de Rachel Andrew, on peut décrire certaines
+        parties de la grille de l’image précédente en précisant plusieurs termes
+        ou notions:
+      </p>
+      <p>
+        Ligne (grid line en rouge sur l’image): ce sont les lignes virtuelles qui
+        composent la grille (verticales ou horizontales).
+      </p>
+      <img src="../image/cour-css-grid/GrilleFigure2.jpg" alt="Image grille 3x3 bleu, provenent du cour:CSS Grid Layout">
+      <p>
+        <strong>Rails</strong> (grid track) ou piste en français: ils sont composés de deux lignes
+        parallèles (horizontales ou verticales) comme une voie de chemin de fer;
+        il s’agit donc des colonnes et des rangées.
+      </p>
+      <img src="../image/cour-css-grid/GrilleFigure3.jpg" alt="Image grille 3x3 bleu, provenent du cour:CSS Grid Layout">
+      <p>
+        <strong>Cellule de grille</strong> (grid cell): c’est le même principe qu’une cellule de
+        tableau (td ou th). Elle est donc définie par les 4 lignes les plus proches qui
+        s’entrecroisent pour composer l’unité minimale de notre grille.
+      </p>
+      <img src="../image/cour-css-grid/GrilleFigure4.jpg" alt="Image grille 3x3 bleu, provenent du cour:CSS Grid Layout">
+      <p>
+        <strong>Zone</strong>, ou périmètre de grille (grid area): elle est définie également par
+        4 lignes qui s’entrecroisent, mais est composée d’au moins deux cellules.
+      </p>
+      <img src="../image/cour-css-grid/GrilleFigure5.jpg" alt="Image grille 3x3 bleu, provenent du cour:CSS Grid Layout">
 
-</body>
-</html>
+    </article>
+    <!-- __________________________________________________________________________________________________________________________ -->
+    <article>
+      <h1>II. Grilles sommaires</h1>
+
+
+      <h2>A. Grille sommaire: 3 colonnes et 1 rangée</h2>
+
+      <p>
+        Ici on crée une grille simple. Pour cela on travaille uniquement sur le
+        grid-container. <a href="CssGrid/exemples-01.html"> voire: CssGrid ->
+        exemples-01  Fig 6 et 7 </a>
+      </p>
+
+        <p>Le code HTML</p>
+        <img src="../image/cour-css-grid/codeHtmlFigure6.jpg " alt="image code html pour realisation grille 3 colone">
+        <p>
+          On a un grid-container, parent de trois grid-items, qui est défini grâce à
+          display: grid.
+        </p>
+        <p>
+          La règle inline-grid existe sur le modèle de inline-flex ou inline-block,
+          permettant de définir un élément de grille à côté d’un élément qui n’en
+          serait pas.
+        </p>
+        <p>
+          Ensuite on définit nos colonnes avec grid-template-columns et nos
+          rangées avec grid-template-rows.
+        </p>
+        <p>Le code CSS</p>
+        <img src="../image/cour-css-grid/codecssFigure7.jpg " alt="image code css pour realisation grille 3 colone">
+
+        <p>
+          Sur grid-template-columns l’unité fr indique une fraction de la largeur
+          (la largeur est divisée par le nombre d’unités de manière égale, on aurait
+          pu indiquer des largeurs en pixels, em, etc.). Par ailleurs, on indique une
+          hauteur, ici égale à la moitié du viewport.
+        </p>
+
+        <p><a href="CssGrid/exemples-01.html">voire Rendue </a></p>
+        <p>rendue image</p>
+        <img src="../image/cour-css-grid/RendueFigure8.jpg " alt="image Rendue grille 3 colone">
+        <p>
+          Les grid-items sont collés les uns aux autres. On pourrait utiliser la règle
+          margin, cependant le système de grille CSS permet de styliser un espace
+          entre les colonnes en utilisant grid-column-gap qui va venir placer un
+          espace entre toutes les colonnes de la grille.
+        </p>
+
+        <img src="../image/cour-css-grid/RendueFigure9.jpg " alt="image Rendue grille 3 colone">
+
+        <p><a href="CssGrid/exemples-02.html"> Rendu figure 10 </a></p>
+
+        <img src="../image/cour-css-grid/RendueFigure10.jpg " alt="image Rendue grille 3 colone">
+        <p>
+          Ici on crée une grille simple avec un espase entre les colone. Pour cela on travaille uniquement sur le
+          grid-container. <a href="CssGrid/exemples-02.html"> voire: CssGrid ->
+          exemples-02  Fig 9 et 10 </a>
+        </p>
+
+      </article>
+
+      <article>
+        <h1>B. Grille sommaire:3 colonnes et 2 rangées</h1>
+
+        <p>
+          Pour ajouter une deuxième rangée, il faut d’abord ajouter les éléments
+          correspondants dans le code HTML:
+        </p>
+
+        <img src="../image/cour-css-grid/RendueFigure11.jpg " alt="image Rendue grille 3 colone">
+
+        <p>Ensuite on indique la taille de la seconde rangée dans le code CSS:</p>
+
+        <img src="../image/cour-css-grid/RendueFigure12.jpg " alt="image Rendue grille 3 colone">
+        <p><a href="CssGrid/exemples-03.html"> Rendu figure 13 </a></p>
+
+        <img src="../image/cour-css-grid/RendueFigure13.jpg " alt="image Rendue grille 3 colone deux ligne separer">
+
+        <p>
+          À nouveau, les cellules sont collées les unes aux autres sur la hauteur. On
+          pourrait utiliser grid-row-gap pour avoir l’équivalent de grid-column-gap
+          sur la hauteur, comme ceci:
+        </p>
+
+        <img src="../image/cour-css-grid/codecssFigure14.jpg " alt="image Rendue grille 3 colone">
+
+        <p>
+          Cependant, on peut se contenter d’utiliser le raccourci qui réunit les deux
+          valeurs en une seule commande, grid-gap. On l’écrit comme suit:
+        </p>
+        <p>
+          grid-gap: grid-row-gap grid-column-gap;
+        </p>
+        <p>
+          Si comme ici les deux valeurs sont identiques, on en indique qu’une seule.
+        </p>
+
+        <img src="../image/cour-css-grid/codecssFigure15.jpg " alt="image Rendue grille 3 colone">
+
+        <p><a href="CssGrid/exemples-04.html"> Rendu figure 16 </a></p>
+
+        <img src="../image/cour-css-grid/rendueFigure16.jpg " alt="image Rendue grille 3 colone">
+
+        <h1>C. Un problème de taille</h1>
+
+        <p>
+          Attention aux hauteurs de rangées. S’il y a beaucoup de texte dans une
+        de ces cellules on a:
+        </p>
+
+        <img src="../image/cour-css-grid/rendueFigure17.jpg " alt="image Rendue grille 3 colone deux ligne separer texe or zonne">
+
+        <p><a href="CssGrid/exemples-05.html"> Rendu figure 17 </a></p>
+
+        <h2>Pour palier a un debordement de texte</h2>
+
+        <p>
+          Le texte déborde. On utilise donc la commande minmax, qui permet
+          d’indiquer une taille minimale et maximale. Ne connaissant pas par
+          avance la valeur du maximum, on utilise simplement auto qui permet
+          à l’algorithme de calculer la hauteur en fonction du contenu. On l’écrit
+          comme suit:
+        </p>
+
+        <p>minmax (valeur minimale, valeur maximale);</p>
+
+        <img src="../image/cour-css-grid/codecssFigure18.jpg " alt="image code css evitant le debordement de texte">
+
+        <p><a href="CssGrid/exemples-06.html"> Rendu figure 19 </a></p>
+
+        <img src="../image/cour-css-grid/renduFigure19.jpg " alt="image code css evitant le debordement de texte">
+
+
+      </article>
+      <article>
+        <h1></h1>
+      </article>
+      <article>
+        <h1></h1>
+      </article>
+      <article>
+        <h1></h1>
+      </article>
+      <article>
+        <h1></h1>
+      </article>
+
+    </main>
+    <footer>
+      <p>
+        Pages réalisés par David Soutarson dans le cadre de son apprentissage des
+        langages du Web.
+      </p>
+    </footer>
+
+  </body>
+  </html>

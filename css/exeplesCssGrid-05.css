@@ -1,0 +1,21 @@
+/* teste de lieson de fichier */
+/* body {
+  background: red;
+} */
+/*couleur et aspect des section */
+.grid-item{
+  background: #dcdcdc;
+  border: 1px solid black;
+  text-align: center;
+}
+
+/*code css du cour Grid CSS*/
+
+.grid-contaire{
+  max-width: 1240px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40vh minmax(40vh,auto);
+  grid-gap: 1em;
+
+}
